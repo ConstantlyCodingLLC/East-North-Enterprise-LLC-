@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>East North Enterprise LLC</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: #002e1a;
+      color: #f5f5dc;
+    }
+
+    header {
+      background-color: #002e1a;
+      color: #d4af37;
+      padding: 100px 20px 60px;
+      text-align: center;
+    }
+
+    header img {
+      max-width: 160px;
+      margin-bottom: 20px;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+
+    header p {
+      font-size: 1.2em;
+      color: #caa468;
+      margin-top: 10px;
+    }
+
+    nav {
+      background: #003b24;
+      padding: 15px;
+      text-align: center;
+    }
+
+    nav a {
+      color: #d4af37;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 500;
+      font-size: 16px;
+      letter-spacing: 0.5px;
+    }
+
+    .additional-services {
+      max-width: 400px;
+      margin: 40px auto 60px;
+      text-align: center;
+    }
+
+    .additional-services label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 600;
+      font-size: 18px;
+      color: #d4af37;
+    }
+
+    .additional-services select {
+      width: 100%;
+      padding: 12px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+      background-color: #f5f5dc;
+      color: #002e1a;
+      cursor: pointer;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #f5f5dc;
+      padding: 20px;
+      border-radius: 8px;
+      border: 1px solid #a76f2c;
+      color: #002e1a;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    }
+
+    .card h3 {
+      color: #004d26;
+      margin-bottom: 10px;
+    }
+
+    .photo-demo {
+      max-width: 1100px;
+      margin: 30px auto 60px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 25px;
+      text-align: center;
+    }
+
+    .photo-demo figure {
+      margin: 0;
+      border-radius: 8px;
+      overflow: hidden;
+      background: #f5f5dc;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .photo-demo img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      display: block;
+      opacity: 0;
+      animation: fadeIn 1.2s ease forwards;
+    }
+
+    .photo-demo figcaption {
+      padding: 12px;
+      font-weight: 600;
+      color: #004d26;
+      background: #e4e4d1;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+
+    footer {
+      text-align: center;
+      background: #001f14;
+      color: #d4af37;
+      padding: 30px 20px;
+    }
+
+    @media (max-width: 480px) {
+      header {
+        padding: 60px 15px 40px;
+      }
+
+      header img {
+        max-width: 140px;
+      }
+
+      nav a {
+        font-size: 14px;
+        margin: 0 10px;
+      }
+
+      .additional-services label {
+        font-size: 16px;
+      }
+
+      .additional-services select {
+        font-size: 14px;
+      }
+
+      section {
+        padding: 40px 15px;
+      }
+
+      .card h3 {
+        font-size: 18px;
+      }
+
+      .photo-demo img {
+        height: 160px;
+      }
+    }
+  </style>
+  <script>
+    // Fix for mobile: force scroll to top on load
+    window.addEventListener('load', () => {
+      window.scrollTo(0, 0);
+    });
+  </script>
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <h1>EAST NORTH ENTERPRISE LLC</h1>
+      <img src="logo.png" alt="East North Enterprise Logo" class="logo"/>
+    </div>
+    <p>Professional Lawn Care &amp; Home Remodeling<br>In South Carolina</p>
+  </header>
+
+  <nav>
+    <a href="mailto:thedjbenterprise@gmail.com" style="color:#d4af37;">Email Us For a Quote</a>
+  </nav>
+
+  <section class="additional-services">
+    <label for="services-dropdown">Explore Additional Services</label>
+    <select id="services-dropdown" onchange="if(this.value) window.location.href=this.value;">
+      <option value="">Select a service...</option>
+      <option value="#lawn">Lawn Services Overview</option>
+      <option value="#remodel">Home Remodeling Overview</option>
+      <option value="#lawn">Lawn Fertilization</option>
+      <option value="#lawn">Lawn Aeration</option>
+      <option value="#lawn">Pest Control</option>
+      <option value="#remodel">Kitchen Remodeling</option>
+      <option value="#remodel">Bathroom Remodeling</option>
+      <option value="#remodel">Basement Finishing</option>
+    </select>
+  </section>
+
+  <!-- Keep the rest of your existing HTML content below unchanged -->
+  <!-- ... (Lawn Care, Additional Services, Remodeling, Photo Demos, Footer, etc.) -->
+
+<section id="lawn">
+  <h2 style="text-align:center;">Lawn Care Services</h2>
+  <div class="grid">
+    <div class="card"><h3>Lawn Mowing</h3><p>Regular mowing to maintain the desired grass height.</p></div>
+    <div class="card"><h3>Edging & Trimming</h3><p>Clean edges for sidewalks and flower beds.</p></div>
+    <div class="card"><h3>Weed Control</h3><p>Targeted treatments to eliminate unwanted weeds.</p></div>
+    <div class="card"><h3>Leaf Removal</h3><p>Clearing fallen leaves from lawn and garden.</p></div>
+    <div class="card"><h3>Mulching</h3><p>Fresh mulch for beds to retain moisture and reduce weeds.</p></div>
+    <div class="card"><h3>Yard Cleanup</h3><p>Remove debris and prepare your yard for the season.</p></div>
+  </div>
+</section>
+
+<section class="photo-demo" aria-label="Lawn Care Photo Demonstrations">
+  <figure>
+    <img src="https://cdn.shortpixel.ai/spai/q_lossless+ret_img+to_auto/www.choctawnation.com/wp-content/uploads/2022/01/lawn-services-1296x729.jpg" alt="Lawn mowing service in action" />
+    <figcaption>Lawn Mowing</figcaption>
+  </figure>
+  <figure>
+    <img src="https://kelloggsupplyco.com/Data/960x350edgelikepro.jpg?Revision=byxc&Timestamp=5wGSqG" alt="Clean edging and trimming around sidewalks" />
+    <figcaption>Edging & Trimming</figcaption>
+  </figure>
+  <figure>
+    <img src="https://www.loveyourlandscape.org/media/19823/snapshot-5.jpg" alt="Fresh mulch in garden beds" />
+    <figcaption>Mulching</figcaption>
+  </figure>
+  <figure>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTykYzLTTi-KrVlqGYJuxwsYH_hz1FpIoKv4w&s" alt="Clearing leaves from yard" />
+    <figcaption>Leaf Removal</figcaption>
+  </figure>
+</section>
+
+<section>
+  <h2 style="text-align:center;">Additional Lawn Services</h2>
+  <div class="grid">
+    <div class="card"><h3>Lawn Fertilization</h3><p>Boost grass health with seasonal fertilization.</p></div>
+    <div class="card"><h3>Lawn Aeration</h3><p>Improve soil airflow with mechanical aeration.</p></div>
+    <div class="card"><h3>Overseeding</h3><p>Thicken your lawn with new seed growth.</p></div>
+    <div class="card"><h3>Dethatching</h3><p>Remove buildup to allow grass to breathe.</p></div>
+    <div class="card"><h3>Pest Control</h3><p>Protect your lawn from insects and grubs.</p></div>
+    <div class="card"><h3>Tree & Shrub Pruning</h3><p>Shape and maintain your trees and shrubs.</p></div>
+    <div class="card"><h3>Planting</h3><p>New shrubs, trees, flowers, and more.</p></div>
+    <div class="card"><h3>Irrigation Systems</h3><p>Install & maintain automatic sprinkler systems.</p></div>
+    <div class="card"><h3>Hardscaping</h3><p>Walkways, patios, and retaining walls built to last.</p></div>
+    <div class="card"><h3>Seasonal Cleanups</h3><p>Spring and fall full-yard cleanups.</p></div>
+  </div>
+</section>
+
+<section id="remodel">
+  <h2 style="text-align:center;">Home Remodeling Services</h2>
+  <div class="grid">
+    <div class="card"><h3>Kitchen Remodeling</h3><p>Cabinets, countertops, appliances, and flooring upgrades.</p></div>
+    <div class="card"><h3>Bathroom Remodeling</h3><p>Shower, vanity, toilet, lighting, and tile installation.</p></div>
+    <div class="card"><h3>Basement Finishing</h3><p>Turn your basement into livable space.</p></div>
+    <div class="card"><h3>Room Additions</h3><p>Expand your home with new rooms or extensions.</p></div>
+    <div class="card"><h3>Flooring Installation</h3><p>Hardwood, tile, laminate, carpet, and more.</p></div>
+    <div class="card"><h3>General Interior Renovation</h3><p>Paint, trim, drywall, and cosmetic improvements.</p></div>
+  </div>
+</section>
+
+<section class="photo-demo" aria-label="Home Remodeling Photo Demonstrations">
+  <figure>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR5u-rXXnha7IyBCziFJ1O2vVsOnWc4NUjaw&s" alt="Modern kitchen remodeling" />
+    <figcaption>Kitchen Remodeling</figcaption>
+  </figure>
+  <figure>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRW9NzHrvxq3XQ8iMaTk4jFuTnpFEeTn5pDrA&s" alt="Stylish bathroom remodel" />
+    <figcaption>Bathroom Remodeling</figcaption>
+  </figure>
+  <figure>
+    <img src="https://thetrustedtoolbox.com/wp-content/uploads/2024/04/basement-remodeling-pre-finishing.png" alt="Finished basement living space" />
+    <figcaption>Basement Finishing</figcaption>
+  </figure>
+  <figure>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa3UWripthmyPRi9-ow6bVjQ83p5zxNGhiaQ&s" alt="Room addition exterior view" />
+    <figcaption>Room Additions</figcaption>
+  </figure>
+</section>
+
+<footer>
+  <p>East North Enterprise LLC &copy; 2025 | <a href="mailto:thedjbenterprise@gmail.com" style="color:#d4af37;">Email Us</a></p>
+</footer>
+
+</body>
+</html>
